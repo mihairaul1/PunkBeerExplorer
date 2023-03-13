@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BeerDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <ImageView
+            android:id="@+id/ivBeerDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_Right"
+            app:layout_constraintStart_toStartOf="@id/guideline_Left"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBeerDetailName"
+            style="@style/beer_item_title_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/guideline_Right"
+            app:layout_constraintStart_toStartOf="@id/guideline_Left"
+            app:layout_constraintTop_toBottomOf="@+id/ivBeerDetailImage" />
+
+        <TextView
+            android:id="@+id/tvBeerDetailStrength"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/guideline_Right"
+            app:layout_constraintStart_toStartOf="@id/guideline_Left"
+            app:layout_constraintTop_toBottomOf="@+id/tvBeerDetailName" />
+
+        <TextView
+            android:id="@+id/tvBeerDetailDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/guideline_Right"
+            app:layout_constraintStart_toStartOf="@id/guideline_Left"
+            app:layout_constraintTop_toBottomOf="@+id/tvBeerDetailStrength" />
+
+        <TextView
+            android:id="@+id/tvBeerDetailFoodPairingTitle"
+            style="@style/beer_food_pairing_title_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/guideline_Right"
+            app:layout_constraintStart_toStartOf="@id/guideline_Left"
+            app:layout_constraintTop_toBottomOf="@+id/tvBeerDetailDescription" />
+
+        <TextView
+            android:id="@+id/tvBeerDetailFoodPairing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@id/guideline_Right"
+            app:layout_constraintStart_toStartOf="@id/guideline_Left"
+            app:layout_constraintTop_toBottomOf="@+id/tvBeerDetailFoodPairingTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

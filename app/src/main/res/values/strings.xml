@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PunkBeerExplorer</string>
+    <string name="food_pairing_label">This beer will go well with:</string>
+    <string name="abv">"ABV: %1$s%%"</string>
+</resources>
